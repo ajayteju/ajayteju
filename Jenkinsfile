@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    imagename = "bparmar77/misc01"
+    imagename = "ajaychaudhari/ajayteju"
     registryCredential = 'git'
     dockerImage = 'tomcat01'
   }
@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/bhaveshpp9/misc01.git', branch: 'master', credentialsId: 'f9153e19-b4f6-48b9-a773-e55a74cd294f'])
+        git([url: 'https://github.com/ajaychaudhari/ajayteju.git', branch: 'master', credentialsId: 'f9153e19-b4f6-48b9-a773-e55a74cd294f'])
 
       }
     }
